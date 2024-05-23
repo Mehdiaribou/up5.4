@@ -25,7 +25,6 @@ module.exports = function(defaults) {
     },
     lessOptions: {
       paths: [
-        'bower_components/bootstrap/less'
       ]
     },
     fingerprint: {

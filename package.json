@@ -3,39 +3,44 @@
   "version": "0.0.0",
   "private": true,
   "description": "ENTSOG POC to showcase revamp results",
+  "repository": "",
   "license": "MIT",
   "author": "",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
   "scripts": {
     "build": "ember build",
+    "install": "napa",
     "lint:js": "eslint ./*.js app blueprints config lib server tests",
+    "napa": "napa",
     "start": "ember serve",
     "test": "ember test",
-    "install": "napa",
-    "update": "napa",
-    "github": "napa"
+    "update": "napa"
   },
-  "napa-config": {
-    "cache": false,
-    "log-level": "debug"
+  "dependencies": {
+    "ember-auto-import": "^2.6.3",
+    "ember-cli-selectize": "^0.6.0",
+    "ember-data": "^5.3.3",
+    "ember-localstorage-adapter": "^1.0.0",
+    "jquery-quicksand": "^1.6.0",
+    "jquery-slimscroll": "^1.3.8",
+    "jquery.easing": "^1.4.1"
   },
   "devDependencies": {
     "@ember/optional-features": "^1.3.0",
+    "@glimmer/component": "^1.0.0",
+    "@glimmer/tracking": "^1.0.0",
     "bootstrap": "^3.4.1",
-    "broccoli-asset-rev": "^2.4.5",
+    "broccoli-asset-rev": "^3.0.0",
     "ember-ajax": "^3.0.0",
-    "ember-bootstrap": "^1.2.2",
     "ember-cli": "^4.9.0",
     "ember-cli-app-version": "^3.0.0",
-    "ember-cli-babel": "^6.6.0",
-    "ember-cli-dependency-checker": "^2.0.0",
+    "ember-cli-babel": "^7.4.2",
+    "ember-cli-dependency-checker": "^3.3.2",
     "ember-cli-eslint": "^4.2.1",
-    "ember-cli-htmlbars": "^2.0.1",
-    "ember-cli-htmlbars-inline-precompile": "^1.0.0",
+    "ember-cli-htmlbars": "^6.3.0",
     "ember-cli-inject-live-reload": "^1.4.1",
     "ember-cli-less": "^1.5.5",
     "ember-cli-moment-shim": "^3.7.1",
@@ -43,15 +48,14 @@
     "ember-cli-shims": "^1.2.0",
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^2.0.0",
-    "ember-data": "~3.1.0",
+    "ember-cli-update": "^2.0.1",
     "ember-export-application-global": "^2.0.0",
-    "ember-font-awesome": "^4.0.0-rc.4",
     "ember-href-to": "^1.15.1",
     "ember-inflector": "^3.0.1",
     "ember-load-initializers": "^1.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
-    "ember-resolver": "^4.0.0",
-    "ember-source": "~3.1.0",
+    "ember-resolver": "^10.1.1",
+    "ember-source": "^4.8.3",
     "ember-template-compiler": "^1.9.0-alpha",
     "eslint-plugin-ember": "^5.0.0",
     "leaflet-label": "*",
@@ -61,16 +65,10 @@
     "napa": "^3.0.0"
   },
   "engines": {
-    "node": "^4.5 || 6.* || >= 7.*"
+    "node": ">= 18"
   },
-  "dependencies": {
-    "ember-cli-selectize": "^0.6.0",
-    "ember-cli-update": "^2.0.1",
-    "ember-localstorage-adapter": "^1.0.0",
-    "handlebars": "^2.0.0",
-    "jquery-quicksand": "^1.6.0",
-    "jquery-slimscroll": "^1.3.8",
-    "jquery.easing": "^1.4.1"
+  "ember": {
+    "edition": "octane"
   },
   "napa": {
     "classlist": "https://github.com/Mehdiaribou/classlist.git",
@@ -81,6 +79,11 @@
     "bootstrap-datepicker": "https://github.com/Mehdiaribou/bootstrap-datepicker.git",
     "leaflet.fullscreen": "https://github.com/Mehdiaribou/leaflet.fullscreen.git",
     "ember-flash-message": "https://github.com/Mehdiaribou/ember-flash-message.git",
-    "highcharts": "https://github.com/Mehdiaribou/highcharts.git"
+    "highcharts": "https://github.com/Mehdiaribou/highcharts.git",
+    "jquery": "https://github.com/Mehdiaribou/jquery.git"
+  },
+  "napa-config": {
+    "cache": false,
+    "log-level": "debug"
   }
 }
